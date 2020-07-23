@@ -6,10 +6,6 @@ authors:
   - admin
 title: W. Jesse Wood
 role: Ph.D. Candidate in Economics
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
-interests:
-  - ""
 social: []
 email: ""
 ---
