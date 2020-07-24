@@ -6,6 +6,6 @@ authors: ["Ijun Lai", "W. Jesse Wood", "Scott A. Imberman", "Katharine O. Strunk
 publication_types: ["2"]
 abstract: ""
 featured: true
-publication: "*Educational Researcher* (forthcoming)"
+publication: "*Educational Researcher* (conditional acceptance)"
 ---
 
