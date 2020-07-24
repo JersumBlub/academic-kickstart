@@ -68,6 +68,6 @@ user_groups:
 - Visitors
 ---
 
-I am a Ph.D. student in economics at Michigan State University. I will be on the 2022 job market. My research interests include economics of education, policy analysis, applied econometrics, public economics and labor economics.
+I am a Ph.D. student in economics at Michigan State University and will be on the 2022 job market. My research interests include economics of education, policy analysis, applied econometrics, public economics and labor economics.
 
 I am a research assistant for the Education Policy Innovation Collaborative under Dr. Katharine Strunk. My work has focused on how student achievement varies under changes to the number of new school openings, availability of school choice and mobility, and teacher quality.
