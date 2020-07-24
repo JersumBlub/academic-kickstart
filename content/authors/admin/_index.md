@@ -68,4 +68,4 @@ user_groups:
 - Visitors
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am a Ph.D. student in economics at Michigan State University. I will be on the 2022 job market. My research interests include economics of education, policy analysis, applied econometrics, and public economics.
