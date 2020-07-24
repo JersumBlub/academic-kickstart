@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en-us">
 <head>
-   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Manager | Academic</title>
@@ -10,17 +9,6 @@
 </head>
 <body>
 <!-- Include the latest Netlify CMS v2.x.x script that builds the admin panel. -->
-<script src="https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+<script src="https://cdn.jsdelivr.net/npm/netlify-cms@2/dist/netlify-cms.min.js"></script>
 </body>
 </html>
