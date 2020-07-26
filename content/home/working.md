@@ -46,6 +46,9 @@ subtitle = ""
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows = false
+  
+  # Date Formate
+  date_format = ""
 
 [design.background]
   # Apply a background color, gradient, or image.
