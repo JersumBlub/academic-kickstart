@@ -2,7 +2,7 @@
 name = "Panda"
 
 # Is theme light or dark?
-light = true
+light = false
 
 # Primary
 primary = "#7d7e82"
