@@ -168,7 +168,7 @@
   {{ $og_image := "" }}
   {{ $twitter_card := "summary_large_image" }}
   {{ if (and (eq .Kind "taxonomy") $avatar_image) }}
-    {{ $og_image = ($avatar_image.Fill "270x270 Center").Permalink }}{{/* Match image proc in About widget. */}}
+    {{ $og_image = ($avatar_image.Fill "512x512 Center").Permalink }}{{/* Match image proc in About widget. */}}
     {{ $twitter_card = "summary" }}
   {{ else if $featured_image }}
     {{ $og_image = $featured_image.Permalink }}
