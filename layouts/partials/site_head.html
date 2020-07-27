@@ -61,7 +61,9 @@
     <link rel="stylesheet" href="{{ printf "/css/vendor/%s" ($scr.Get "vendor_css_filename") | relURL }}">
   {{ else }}
     {{ $scr.Set "use_cdn" 1 }}
-    {{ printf "<link rel=\"stylesheet\" href=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\">" (printf $css.academicons.url $css.academicons.version) $css.academicons.sri | safeHTML }}
+    {{ if site.Params.icon.pack.ai }}
+      {{ printf "<link rel=\"stylesheet\" href=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\">" (printf $css.academicons.url $css.academicons.version) $css.academicons.sri | safeHTML }}
+    {{ end }}
     {{ printf "<link rel=\"stylesheet\" href=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\">" (printf $css.fontAwesome.url $css.fontAwesome.version) $css.fontAwesome.sri | safeHTML }}
     {{ printf "<link rel=\"stylesheet\" href=\"%s\" integrity=\"%s\" crossorigin=\"anonymous\">" (printf $css.fancybox.url $css.fancybox.version) $css.fancybox.sri | safeHTML }}
 
@@ -114,10 +116,17 @@
 
   {{ end }}
 
-  {{/* We cannot use SRI with Google Fonts because the CSS is dynamically generated according to the user agent. */}}
-  {{/* Hugo's htmlEscape cannot escape "|" in Google Font URIs so we implement our own escape functionality. */}}
+  {{/* Load Google Fonts if the site's Font Theme uses them. */}}
+  {{/* Note: we cannot use SRI with Google Fonts because the CSS is dynamically generated according to the user agent. */}}
   {{ with ($scr.Get "google_fonts") }}
-  <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css?family=%s&display=swap\"" . | replaceRE "\\|" "%7C" | safeHTMLAttr }}>
+    {{ if hasPrefix . "family=" }}
+      {{/* If `google_fonts` starts with "family=", use API v2 (https://developers.google.com/fonts/docs/css2) */}}
+      <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css2?%s&display=swap\"" . | safeHTMLAttr }}>
+    {{ else }}
+      {{/* Otherwise, use API v1 */}}
+      {{/* Hugo's htmlEscape cannot escape "|" in Google Font URIs so we implement our own escape functionality. */}}
+      <link rel="stylesheet" {{ printf "href=\"https://fonts.googleapis.com/css?family=%s&display=swap\"" . | replaceRE "\\|" "%7C" | safeHTMLAttr }}>
+    {{ end }}
   {{ end }}
 
   {{ $css_comment := printf "/*!* Source Themes Academic v%s (https://sourcethemes.com/academic/) */\n" site.Data.academic.version }}
@@ -159,7 +168,7 @@
   {{ $og_image := "" }}
   {{ $twitter_card := "summary_large_image" }}
   {{ if (and (eq .Kind "taxonomy") $avatar_image) }}
-    {{ $og_image = ($avatar_image.Full "270x270 Center").Permalink }}{{/* Match image proc in About widget. */}}
+    {{ $og_image = ($avatar_image.Fill "270x270 Center").Permalink }}{{/* Match image proc in About widget. */}}
     {{ $twitter_card = "summary" }}
   {{ else if $featured_image }}
     {{ $og_image = $featured_image.Permalink }}
@@ -169,9 +178,6 @@
     {{ $og_image = printf "img/%s" site.Params.sharing_image | absURL }}
   {{ else if $has_logo }}
     {{ $og_image = (partial "functions/get_logo" (dict "constraint" "fit" "size" 300)).Permalink }}
-    {{ $twitter_card = "summary" }}
-  {{ else }}
-    {{ $og_image = (partial "functions/get_icon" 512).Permalink }}
     {{ $twitter_card = "summary" }}
   {{ end }}
   {{ $scr.Set "og_image" $og_image }}{{/* Set `og_image` globally for `rss.xml`. */}}
