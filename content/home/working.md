@@ -12,6 +12,13 @@ subtitle = ""
   # Page type to display. E.g. project.
   page_type = "working"
   
+  # Filter posts by a taxonomy term.
+  [content.filters]
+    tag = ""
+    category = ""
+    publication_type = ""
+    author = ""
+  
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
   # To show all items, set `tag` to "*".
@@ -21,9 +28,9 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-   [[content.filter_button]]
-     name = "All"
-     tag = "*"
+  #[[content.filter_button]]
+  #  name = "All"
+  # tag = "*"
   
   # [[content.filter_button]]
   #   name = "Deep Learning"
