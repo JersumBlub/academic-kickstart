@@ -19,7 +19,7 @@
   weight = 50
 
 [[main]]
-  name = "Contacthi"
+  name = "Contact"
   url = "#contact"
   weight = 60
 
