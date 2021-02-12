@@ -43,8 +43,8 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/WJesseWood
-- icon: file-alt
-  icon_pack: fas
+- icon: cv
+  icon_pack: ai
   link: cv/Wood_CV.pdf
   
 # Google Scholar
