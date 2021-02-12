@@ -46,6 +46,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/jessewood
+- icon: files
+  icon_pack: fas
+  link: cv/Wood_CV.pdf
   
 # Google Scholar
 # - icon: google-scholar
