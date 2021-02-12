@@ -3,13 +3,6 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
- [[main]]
-    name = "CV"
-    url = "cv/Wood_CV.pdf"
-    weight = 2
-	
 [[main]]
   name = "Home"
   url = "#about"
@@ -29,6 +22,12 @@
   name = "Contact"
   url = "#contact"
   weight = 60
+  
+[[main]]
+  name = "CV"
+  url = "cv/Wood_CV.pdf"
+  weight = 70
+	
 
 
 
