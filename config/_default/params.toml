@@ -113,6 +113,7 @@ appointment_url = ""
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
   {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/WJesseWood"},
+  {icon = "CV", icon_pack = "fab", name = "CV", link = "https://twitter.com/WJesseWood"},
 #  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
 #  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
 #  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
@@ -148,8 +149,8 @@ address_format = "en-us"
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
 main_menu = {align = "l", show_logo = true}
-
 # Show estimated reading time for posts? (true/false)
+
 reading_time = true
 
 # Display next/previous section pager? (true/false)
