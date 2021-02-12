@@ -52,6 +52,11 @@ social:
   icon_pack: ai
   link: https://scholar.google.com/citations?user=W5OUEVgAAAAJ&hl=en&oi=sra
 
+# Github
+#- icon: github
+#  icon_pack: fab
+#  link: https://github.com/jessewood
+  
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
