@@ -5,7 +5,6 @@ date_print: "2021"
 authors: ["W. Jesse Wood", "Ijin Lai", "Scott Imberman", "Katharin Strunk", "Nathan Jones"]
 publication_types: ["2"]
 abstract: ""
-show_date: false
 featured: true
 publication: "*Educational Researcher*"
 ---
