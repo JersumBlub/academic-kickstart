@@ -43,9 +43,6 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/WJesseWood
-- icon: github
-  icon_pack: fab
-  link: https://github.com/jessewood
 - icon: file-alt
   icon_pack: fas
   link: cv/Wood_CV.pdf
