@@ -18,6 +18,9 @@ subtitle = ""
     category = ""
     publication_type = ""
     author = ""
+	
+  # Choose how much pages you would like to display (0 = all pages)
+  count = 0
   
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
