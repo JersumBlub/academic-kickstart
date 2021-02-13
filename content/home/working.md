@@ -59,4 +59,6 @@ subtitle = ""
  
  # CSS class.
  css_class = ""
+ 
+ <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/sped_tqgs/SPED_TQGs.pdf" target="_blank" rel="noopener">PDF</a>
 +++
