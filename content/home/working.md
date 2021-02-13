@@ -11,8 +11,6 @@ subtitle = ""
 [content]
   # Page type to display. E.g. project.
   page_type = "working"
-  
-   {{% staticref "working\" "newtab" %}}Download my CV{{% /staticref %}}
 	
    # Choose how much pages you would like to display (0 = all pages)
   count = 5
