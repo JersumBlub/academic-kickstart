@@ -5,7 +5,7 @@ date_print: "2020"
 show_date: false
 authors: ["W. Jesse Wood", "Ijin Lai", "Scott Imberman", "Katharin Strunk", "Nathan Jones"]
 publication_types: ["2"]
-abstract: "a"
+abstract: ""
 featured: true
-publication: "a"
+publication: ""
 ---
