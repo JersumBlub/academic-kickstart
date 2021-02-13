@@ -11,6 +11,8 @@ subtitle = ""
 [content]
   # Page type to display. E.g. project.
   page_type = "working"
+  
+   {{% staticref "media/cv.pdf" "newtab" %}}Download my CV{{% /staticref %}}
 	
    # Choose how much pages you would like to display (0 = all pages)
   count = 5
@@ -59,6 +61,5 @@ subtitle = ""
  
  # CSS class.
  css_class = ""
- 
- <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/publication/sped_tqgs/SPED_TQGs.pdf" target="_blank" rel="noopener">PDF</a>
+
 +++
