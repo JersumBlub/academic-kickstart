@@ -36,8 +36,8 @@ subtitle = ""
   #   name = "Other"
   #   tag = "Demo"
   
-  #url_pdf
-  url_pdf = true
+  # Show a "See all pages" link underneath the featured content?
+  link_to_archive = false
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
