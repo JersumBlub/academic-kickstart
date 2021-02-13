@@ -1,6 +1,6 @@
 +++
 # A Projects section created with the Portfolio widget.
-widget = "github.JesseWood.working"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
@@ -10,7 +10,7 @@ subtitle = ""
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "github.JesseWood.working"
+  page_type = "working"
 	
    # Choose how much pages you would like to display (0 = all pages)
   count = 5
