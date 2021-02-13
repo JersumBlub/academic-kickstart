@@ -10,7 +10,7 @@ subtitle = ""
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "working"
+  page_type = "publication"
 	
    # Choose how much pages you would like to display (0 = all pages)
   count = 0
