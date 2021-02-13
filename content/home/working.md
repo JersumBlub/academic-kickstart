@@ -12,47 +12,30 @@ subtitle = ""
   # Page type to display. E.g. project.
   page_type = "working"
 	
-  # Choose how much pages you would like to display (0 = all pages)
+   # Choose how much pages you would like to display (0 = all pages)
   count = 0
-  
-  # Filter toolbar (optional).
-  # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
-  # To show all items, set `tag` to "*".
-  # To filter by a specific tag, set `tag` to an existing tag name.
-  # To remove toolbar, delete/comment all instances of `[[content.filter_button]]` below.
-  
-  # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
-  filter_default = 0
-  
-  #[[content.filter_button]]
-  #  name = "All"
-  # tag = "*"
-  
-  # [[content.filter_button]]
-  #   name = "Deep Learning"
-  #   tag = "Deep Learning"
-  
-  # [[content.filter_button]]
-  #   name = "Other"
-  #   tag = "Demo"
-  
+
+  # Page order. Descending (desc) or ascending (asc) date.
+  order = "desc"
+
   # Show a "See all pages" link underneath the featured content?
   link_to_archive = false
 
+  # Filter posts by a taxonomy term.
+  [content.filters]
+    tag = ""
+    category = ""
+    publication_type = ""
+    author = ""
+  
 [design]
-  # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "1"
-
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
   #   3 = Card
-  #   5 = Showcase
+  #   4 = Citation (publication only)
   view = 3
-
-  # For Showcase view, flip alternate rows?
-  flip_alt_rows = false
-
+  
 [design.background]
   # Apply a background color, gradient, or image.
   #   Uncomment (by removing `#`) an option to apply it.
@@ -80,4 +63,3 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-
