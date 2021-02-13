@@ -8,7 +8,7 @@
 {{ $items_sort := $st.Params.content.order| default "desc" }}
 
 {{/* Query */}}
-{{ $query := where (where site.RegularPages "Type" $items_type) "Params.working" true }}
+{{ $query := where (where site.RegularPages "Type" $items_type) "Params.featured" true }}
 {{ $archive_page := site.GetPage "Section" $items_type }}
 
 {{/* Filters */}}
