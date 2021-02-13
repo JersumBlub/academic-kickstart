@@ -7,8 +7,4 @@ show_date: false
 abstract: ""
 publication: ""
 featured: true
-[[main]]
-    name = "PDF"  # A name for the link.
-    url = "working/SET_RelAd/SET_RelAd.pdf"  # URL of the section.
-    weight = 10  # Position of the link in the menu.
 ---
