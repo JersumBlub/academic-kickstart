@@ -35,6 +35,9 @@ subtitle = ""
   # [[content.filter_button]]
   #   name = "Other"
   #   tag = "Demo"
+  
+  #url_pdf
+  url_pdf = true
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
