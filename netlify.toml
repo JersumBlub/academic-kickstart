@@ -1,5 +1,5 @@
 [build]
-  command = "npm install hugo-extended --save-dev"
+  command = "hugo --gc --minify -b $URL"
   publish = "public"
 
 [build.environment]
