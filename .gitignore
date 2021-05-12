@@ -1,2 +1,8 @@
+# IDEs
+.idea/
 
-themes/academic
+# Hugo
+/resources/
+public/
+jsconfig.json
+node_modules/
